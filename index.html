@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Shop</title>
+
+    <!-- bebas neue and poppins font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwindcss cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind custom classes  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent-yellow': '#FABE4C',
+                        'accent-black': '#363958',
+                        'accent-green': '#A4BC46',
+                        'accent-bg': '#FFFBF0',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- universal style  -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Bebas Neue', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .bebas{
+            font-family: 'Bebas Neue', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-accent-bg py-9 w-full">
+        <nav class="container flex items-center justify-between m-auto">
+            <div class="flex justify-between items-center">
+                <img src="./images/Frame.svg" alt="">
+
+                <h2 class="text-accent-black text-2xl font-bold">
+                    <span class="text-accent-green">Penguin</span> Shop
+                </h2>
+            </div>
+
+            <ul class="flex items-center justify-between font-medium poppins gap-10">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Products</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
