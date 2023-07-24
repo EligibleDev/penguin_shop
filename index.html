@@ -16,6 +16,9 @@
     <!-- tailwindcss cdn  -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- fontawesome icon -->
+    <script src="https://kit.fontawesome.com/2782cb5fb7.js" crossorigin="anonymous"></script>
+
     <!-- tailwind custom classes  -->
     <script>
         tailwind.config = {
@@ -41,23 +44,23 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        .poppins{
+        .poppins {
             font-family: 'Poppins', sans-serif;
         }
 
-        .bebas{
+        .bebas {
             font-family: 'Bebas Neue', sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <header class="bg-accent-bg py-9 w-full">
-        <nav class="container flex items-center justify-between m-auto">
+    <header class="bg-accent-bg py-9">
+        <nav class="max-w-screen-xl px-4 xl:p-0 flex sm:flex-row flex-col sm:gap-0 gap-4 items-center justify-between m-auto">
             <div class="flex justify-between items-center">
                 <img src="./images/Frame.svg" alt="">
 
-                <h2 class="text-accent-black text-2xl font-bold">
+                <h2 class="text-accent-black text-3xl font-bold">
                     <span class="text-accent-green">Penguin</span> Shop
                 </h2>
             </div>
@@ -72,7 +75,29 @@
     </header>
 
     <main>
+        <div class="bg-accent-bg">
+            <div class="flex flex-col lg:flex-row max-w-screen-xl px-4 xl:p-0 justify-between m-auto">
+                <div class="flex flex-1 items-start justify-center flex-col">
+                    <h1 class="bebas text-8xl text-accent-yellow">
+                        Be the Penguins <br><span class="bebas text-accent-black font-normal">of Winter</span>
+                    </h1>
 
+                    <p class="font-normal text-base pb-5">
+                        Lorem Ipsum is simply dummy text of the printing<br>and typesetting industry.
+                    </p>
+
+                    <button class="bg-accent-green text-white py-4 px-7 rounded-lg">
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        Visit Shop
+                    </button>
+                </div>
+
+                <div class="flex flex-1 items-center justify-center lg:justify-end">
+                    <img src="./images/model.png" alt="">
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
